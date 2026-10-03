@@ -1,4 +1,3 @@
-//---   Imports   ---
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser')
@@ -29,7 +28,6 @@ function makeid(length) {
 }
 
 
-//---   Redirect Pages Correctly   ---
 app.post('/new', cors(corsOptions), (req, res) => {
     const {title, body} = req.body
     const postData = {
